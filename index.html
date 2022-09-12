@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <section>
       <nav>
-        <img src="./HTML Practise Assets 2/FES.svg" alt="" />
+        <img src="./HTML Practise Assets 2/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -18,26 +20,24 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn Frontend</h1>
-          <p>
-            Go from being an absolute beginnger to pro with a simplified process
-          </p>
-          <button>Start Now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
+            <button>Start Now</button>
+          </div>
+          <figure>
+            <img src="./HTML Practise Assets 2/laptop.png" alt="Home Page Image"/>
+          </figure>
         </div>
-        <figure>
-          <img
-            src="./HTML Practise Assets 2/laptop.png"
-            alt="Home Page Image"
-          />
-        </figure>
       </header>
     </section>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
+        <div class="section__description">
+        <div class="section__description--wrapper">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi
             facere perferendis inventore dolorum aliquid explicabo non
@@ -49,9 +49,10 @@
             optio!
           </p>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
           <img src="./HTML Practise Assets 2/about.jpg" alt="" />
         </figure>
+        </div>
       </section>
 
       <section id="discord">
@@ -87,14 +88,14 @@
     </main>
 
     <footer>
-        <img src="/HTML Practise Assets 2/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
-        </div>
-        <p>Copyright Frontend Simplified</p>
+      <img src="/HTML Practise Assets 2/FES.svg" alt="" />
+      <div>
+        <a href="#about">About</a>
+        <a href="#discord">Discord</a>
+        <a href="#contact">Contact</a>
+        <a href="">Courses</a>
+      </div>
+      <p>Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>
