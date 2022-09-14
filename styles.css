@@ -65,6 +65,7 @@ li {
 .row {
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,9 +77,17 @@ About
 
 */
 
-#about {
+#about, 
+#discord,
+#contact,
+footer {
     padding: 48px 0px;
 }
+
+#about{ 
+    background: #f8ffdc;  
+}
+
 
 h2 {
     font-size: 60px;
@@ -94,6 +103,7 @@ h2 {
 
 .about__img--wrapper {
     width: 40%;
+    padding: 0 24px;
 }
 
 img {
@@ -102,4 +112,71 @@ img {
 
 .section__description--wrapper {
     width: 60%;
+    padding: 0 24px; 
+}
+
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* 
+
+DISCORD
+
+*/
+
+#discord {
+    background-color: #cefeff;
+}
+
+/*
+
+CONTACT 
+
+*/
+
+#contact {
+    background-color: #dce9ff;
+}
+
+form {
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+
+.footer_links {
+    margin-bottom: 32px;
+}
+
+.footer_link {
+    padding: 0 16px;
 }
